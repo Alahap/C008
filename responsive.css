@@ -4,19 +4,30 @@
   .header-logo {
     float: none;
     width: 100%;
-    margin: 0 85px;
   }
-
+  
+  .header-logo h1 {
+    text-align: center;
+  }
+  
   .header-right {
     float: none;
     display: block;
+    width: 100%;
     padding: 0 5px;
+  }
+  
+  .header-right ul {
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    margin: auto;
   }
 
   .header-right li {
     line-height: initial;
     margin-bottom: 5px;
-    padding: 0 10px;
+    padding: 0px 5px;
   }
 
   .header-right a {
@@ -28,6 +39,7 @@
   /*Section-1*/  
   .section-1 {
     left: 0%;
+    position: relative;
   }
 
   .section-1 p {
@@ -69,8 +81,40 @@
   }
 
   /* footer */
-  .f-wrap {
+  .f-left-container {
+    flex: none;
     width: 100%;
+  }
+
+  .f-right-container {
+    flex: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer1-links {
+    flex-wrap: wrap-reverse;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  .footer2-links {
+    flex: none;
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .link-title {
+    width: 100%;
+  }
+
+  .link2-title {
+    width: 100%;
+  }
+
+  .footer3-links {
+    width: 100%;
+    flex: none;
   }
 }
 
@@ -113,6 +157,18 @@
     cursor: pointer;
   }
 
+  .img-main-2 {
+    width: 160px;
+    height: 100px;
+  }
+
+  .img-main-2:hover {
+    width: 170px;
+    height: 110px;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
   /* section-2 */
   .lesson {
     width: 100%;
@@ -128,7 +184,29 @@
   }
 
   /* footer */
-  .f-wrap {
-    width: 100%;
+  footer {
+    display: block;
+    text-align: center;
+  }
+  
+  .f-left-container {
+    display: block;
+  }
+  
+  .footer1-links {
+    display: block;
+  }
+  
+  .footer2-links {
+    display: block;
+  }
+  
+  .f-right-container {
+    display: block;
+  }
+
+  textarea {
+    width: 50%;
+    height: 50%;
   }
 }
