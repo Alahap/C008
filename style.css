@@ -79,8 +79,7 @@ p::first-letter {
 .container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #29568f),
-    url(./images/background-2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #29568f), url(./img/background-2.jpg);
   background-size: cover;
   background-position: center;
   /*position: fixed;*/
@@ -183,8 +182,20 @@ button:hover {
   height: 200px;
 }
 
+.img-main-2 {
+  width: 320px;
+  height: 200px;
+}
+
 .img-main:hover {
   width: 210px;
+  height: 210px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.img-main-2:hover {
+  width: 330px;
   height: 210px;
   transition: 0.8s;
   cursor: pointer;
@@ -316,37 +327,73 @@ button:hover {
 
 footer {
   background-image: linear-gradient(rgb(189, 192, 196),rgb(148, 137, 197));
+  display: flex;
 }
 
-.f-container {
+.f-left-container {
+  flex-basis: 70%;
+  display: flex;
+  margin-right: 50px;
+}
+
+.footer1-links {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 0px 20px 20px;
 }
 
-.f-wrap {
+.footer2-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.f-right-container {
+  flex-basis: 40%;
+  display: flex;
+  margin: 20px;
+}
+
+.link-title {
   padding: 10px;
   flex: auto;
   width: 25%;
 }
 
-.f-wrap h2 {
-  padding: 5px 0;
-  font-size: 20px;
+.link2-title {
+  padding: 10px;
+  flex: auto;
+  width: 300px;
 }
 
-.f-wrap h5 {
-  font-weight: normal;
-  font-size: 14px;
-}
-
-.f-wrap p {
-  font-size: 10px;
-}
-
-.f-wrap li {
-  margin-top: 5px;
+.link-title li {
   list-style-type: none;
+  padding-bottom: 5px;
+}
+
+.small-edit {
+  padding-bottom: 10px;
+}
+
+.link-title h4 {
+  padding-bottom: 10px;
+}
+
+.link2-title h4 {
+  padding-bottom: 10px;
+}
+
+.link-title a {
+  color:#000;
+}
+
+textarea {
+  width: 100%;
+  height: 50%;
 }
